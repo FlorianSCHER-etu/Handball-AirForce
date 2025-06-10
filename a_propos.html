@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site dédié au développement du handball dans notre région. Découvrez nos équipes, nos projets et notre passion pour le sport.">
+    <meta name="keywords" content="handball, sport, développement, équipe, région">
+    <meta name="author" content="SCHER Florian">
+    <title>Handball Air Force - À propos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header class="bandeau">
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="Images/instagram.jfif" alt="Lien vers Instagram">
+            </a>
+            <a href="https://www.snapchat.com" target="_blank">
+                <img src="Images/snap.png" alt="Lien vers Snapchat">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="Images/tiktok.png" alt="Lien vers TikTok">
+            </a>
+            <a href="https://x.com/?lang=fr" target="_blank">
+                <img src="Images/x.png" alt="Lien vers X">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="base_handball.html">Les bases du handball</a></li>
+                <li><a href="histoire.html">Histoire du handball</a></li>
+                <li><a href="ligue_des_champions.html">Ligue des Champions</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+            </ul>
+        </nav>
+        <h1>À propos</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>À Propos de Nous</h2>
+            <h3>Qui sommes-nous ?</h3>
+            <p>Bienvenue chez <strong>Handball Air Force</strong>, un acteur majeur dans le domaine du handball. Nous nous engageons à développer notre site pour qu'il devienne le leader du marché. Souhaitez-vous rejoindre l'aventure ?</p>
+            <img src="Images/logo.webp" alt="Logo de Handball Air Force">
+        </section>
+
+        <section>
+            <h3>Notre Mission</h3>
+            <p>Notre mission est de répondre à vos attentes concernant le handball et de développer ce sport, tout en garantissant une qualité optimale et en respectant les valeurs fondamentales :</p>
+            <ul>
+                <li>Respect</li>
+                <li>Qualité du développement</li>
+                <li>Engagement envers vous</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Notre Équipe</h3>
+            <p>Nous sommes une équipe passionnée et débutante, dédiée à faire connaître le handball.</p>
+            <p>Dirigée par <strong>SCHER Florian</strong>, notre équipe combine expérience et créativité pour atteindre nos objectifs.</p>
+            <h4>Florian SCHER</h4>
+            <p id="texte">Bonjour, je suis Florian SCHER, développeur du site Handball Air Force. Passionné de handball depuis l'âge de 5 ans, j'ai eu l'opportunité de jouer en section sportive au collège, remportant notamment le titre de champion de France. Je joue actuellement pour l'AS Giberville Handball, où nous avons récemment remporté plusieurs titres, dont celui de vice-champions de Normandie en 2024.</p>
+        </section>
+
+        <section>
+            <h3>Moments Célèbres</h3>
+            <ul>
+                <li><img src="Images/gb.jpg" alt="Premier match dans les buts"> Première expérience en tant que gardien lors d'un match crucial.</li>
+                <li><img src="Images/beach.jpg" alt="Tournoi de beach handball"> Participation à un tournoi de beach handball, avec une récompense de meilleur gardien.</li>
+                <li><img src="Images/finale.jpg" alt="Finale de coupe"> Premier match en finale de coupe de Normandie avec mon club.</li>
+                <li><img src="Images/coupe.jpg" alt="Coupe de Normandie"> Victoire historique en coupe régionale pour notre club.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h3>Contactez-moi</h3>
+            <form action="contact.php" method="POST">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Handball Air Force. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
