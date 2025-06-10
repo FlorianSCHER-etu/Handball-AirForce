@@ -1,0 +1,1216 @@
+/* =================================================================
+   Importation des polices Google Fonts
+================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+/* =================================================================
+   Réinitialisation des styles par défaut
+================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Inclut les bordures et paddings dans la taille totale */
+}
+
+img {
+    width: 50%;
+    /* Réduit la largeur de l'image à 50% de son conteneur */
+    height: auto;
+    /* Maintient le ratio d'aspect de l'image */
+    display: block;
+    margin: 0 auto;
+    /* Centre horizontalement */
+}
+
+/* =================================================================
+   Styles généraux
+================================================================= */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Police principale */
+    line-height: 1.6;
+    /* Espacement des lignes pour une meilleure lisibilité */
+    color: #333;
+    /* Couleur principale du texte */
+    background-color: #f4f4f4;
+    /* Fond clair */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centre le contenu horizontalement */
+    text-align: center;
+    /* Centre également le texte globalement */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Liens */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    /* Les images ne dépassent jamais leur conteneur */
+    height: auto;
+    /* Conserve les proportions des images */
+}
+
+/* =================================================================
+   En-tête
+================================================================= */
+.bandeau {
+    background-color: #0066cc;
+    /* Couleur bleue pour l'en-tête */
+    color: white;
+    /* Texte en blanc pour contraste */
+    padding: 10px 20px;
+    width: 100%;
+    /* Occupe toute la largeur */
+    text-align: center;
+    /* Centre le texte de l'en-tête */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    /* Taille du titre principale */
+    font-family: 'Montserrat', sans-serif;
+    /* Police secondaire pour les titres */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    /* Centre les liens horizontalement */
+    list-style: none;
+    /* Supprime les puces */
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    /* Supprime le soulignement */
+    color: white;
+    /* Texte blanc */
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* Coins arrondis */
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+    /* Transition fluide */
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    background-color: #004c99;
+    /* Couleur de survol */
+}
+
+/* =================================================================
+   Icônes sociales
+================================================================= */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    /* Centre les icônes horizontalement */
+    gap: 15px;
+    /* Espacement entre les icônes */
+    margin: 10px 0;
+}
+
+.social-icons img {
+    width: 40px;
+    /* Taille fixe pour les icônes */
+    height: 40px;
+    border-radius: 50%;
+    /* Icônes circulaires */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+    /* Zoom au survol */
+}
+
+/* =================================================================
+   Section principale (contenu)
+================================================================= */
+main {
+    max-width: 1200px;
+    /* Limite la largeur */
+    margin: 20px auto;
+    /* Centre le contenu horizontalement */
+    background-color: white;
+    /* Fond blanc pour contraste */
+    padding: 20px;
+    border-radius: 10px;
+    /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    text-align: center;
+    /* Centre le texte */
+    width: 90%;
+    /* Ajuste pour les petits écrans */
+}
+
+main h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 20px 0;
+    border-bottom: 2px solid #ddd;
+    /* Ligne décorative */
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    /* Centre les sous-titres */
+}
+
+h1 {
+    color: red
+}
+
+h2 {
+    color: blue;
+
+}
+
+h3 {
+    color: blueviolet
+}
+
+h4 {
+    color: purple
+}
+
+h5 {
+    color: orange
+}
+
+h6 {
+    color: green
+}
+
+main p,
+main li {
+    margin: 10px 0;
+}
+
+main ul {
+    list-style-type: disc;
+    /* Puces classiques */
+    margin: 10px 0 20px 20px;
+    text-align: left;
+    /* Les listes restent alignées à gauche */
+}
+
+main ul ul {
+    list-style-type: circle;
+    /* Sous-listes avec puces circulaires */
+}
+
+/* =================================================================
+   Tableaux (contenu tabulaire)
+================================================================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    /* Texte légèrement réduit */
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    /* Centre le texte dans les cellules */
+    word-wrap: break-word;
+    /* Empêche les débordements */
+}
+
+table th {
+    background-color: #0066cc;
+    color: white;
+    /* Texte blanc pour contraste */
+    font-family: 'Montserrat', sans-serif;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+    /* Surlignage au survol */
+}
+
+/* =================================================================
+   Section 
+================================================================= */
+section {
+    display: flex;
+    flex-direction: column;
+    /* Aligne les éléments en colonne */
+    align-items: center;
+    /* Centre horizontalement */
+    text-align: center;
+    /* Centre le texte à l'intérieur */
+    margin: 30px 0;
+    /* Ajoute un peu d'espace au-dessus et en dessous */
+}
+
+section h2 {
+    font-size: 2rem;
+    /* Taille du titre */
+    color: #0066cc;
+    /* Couleur bleue pour le titre */
+    margin-bottom: 20px;
+    /* Espacement sous le titre */
+}
+
+section p {
+    font-size: 1rem;
+    /* Taille de la police du paragraphe */
+    margin-bottom: 20px;
+    /* Espacement sous le paragraphe */
+}
+
+section ul {
+    list-style-type: disc;
+    /* Puces classiques */
+    padding-left: 20px;
+    /* Indentation pour les puces */
+}
+
+section li {
+    font-size: 1rem;
+    /* Taille de la police des éléments de la liste */
+    margin-bottom: 10px;
+    /* Espacement entre les éléments */
+
+}
+
+/* --- Styles spécifiques aux IDs --- */
+#histoire_ldc {
+    /* Fond clair avec une bordure bleue à gauche pour un style d'encart visuel */
+    background-color: #eef4fc;
+    border-left: 4px solid #0056b3;
+    padding: 15px;
+    /* Espacement interne pour une meilleure lisibilité */
+    margin: 20px 0;
+    /* Espacement externe pour séparer l'encart des autres éléments */
+}
+
+#texte {
+    /* Style général du texte pour une meilleure lisibilité */
+    font-size: 1rem;
+    /* Taille de police standard */
+    line-height: 1.8;
+    /* Interligne pour espacer les lignes de texte */
+    margin: 10px 0;
+    /* Espacement externe pour le texte */
+    color: #444;
+    /* Couleur de texte neutre et lisible */
+}
+
+#Debuts,
+#context {
+    /* Mise en avant des titres avec une taille plus grande et du gras */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    /* Espacement au-dessus des titres */
+}
+
+#sportif_social {
+    /* Style encadré doux avec un fond clair et arrondi */
+    background-color: #fefae0;
+    /* Couleur de fond jaune pâle */
+    padding: 10px;
+    /* Espacement interne */
+    border-radius: 5px;
+    /* Coins arrondis pour un style moderne */
+}
+
+#competition_continentale {
+    /* Mise en évidence avec une bordure en pointillés */
+    border: 2px dashed #0056b3;
+    /* Bordure bleue en pointillés */
+    padding: 10px;
+    /* Espacement interne */
+    margin: 15px 0;
+    /* Espacement externe pour séparer des autres sections */
+}
+
+#premier_tournoi {
+    /* Style textuel pour mettre en valeur le contenu avec une couleur et un style italique */
+    color: #ff6f61;
+    /* Couleur rouge-orangée pour attirer l'attention */
+    font-style: italic;
+    /* Texte en italique */
+}
+
+#impact_heritage {
+    /* Encadré avec une bordure verte pour mettre en avant une information importante */
+    background-color: #d4edda;
+    /* Fond vert clair */
+    border-left: 5px solid #28a745;
+    /* Bordure verte épaisse sur le côté gauche */
+    padding: 15px;
+    /* Espacement interne */
+}
+
+form {
+    /* Mise en forme des formulaires pour une présentation verticale */
+    display: flex;
+    flex-direction: column;
+    /* Organisation verticale des éléments */
+    gap: 10px;
+    /* Espacement entre les éléments du formulaire */
+    width: 50%;
+    /* Formulaire centré avec une largeur de 50% */
+    margin: auto;
+    /* Centrage horizontal */
+}
+
+form input,
+form textarea {
+    /* Style des champs de formulaire pour uniformiser l'apparence */
+    padding: 0.5rem;
+    /* Espacement interne pour rendre les champs confortables */
+    border: 1px solid #ccc;
+    /* Bordure grise légère */
+    border-radius: 5px;
+    /* Coins arrondis */
+}
+
+form button {
+    /* Bouton avec un style moderne et des couleurs contrastantes */
+    padding: 0.5rem 1rem;
+    /* Espacement interne */
+    background-color: #0a9396;
+    /* Couleur de fond verte */
+    color: #fff;
+    /* Texte blanc pour contraste */
+    border: none;
+    /* Suppression de la bordure */
+    cursor: pointer;
+    /* Changement de curseur au survol */
+    border-radius: 5px;
+    /* Coins arrondis */
+}
+
+#newsletter form {
+    /* Mise en forme du formulaire de la newsletter pour un alignement horizontal */
+    display: flex;
+    justify-content: center;
+    /* Centrage horizontal des éléments */
+    gap: 10px;
+    /* Espacement entre les champs */
+}
+
+#newsletter input {
+    /* Champs d'entrée du formulaire de newsletter */
+    padding: 0.5rem;
+    /* Espacement interne */
+    border: 1px solid #ccc;
+    /* Bordure grise légère */
+    border-radius: 5px;
+    /* Coins arrondis */
+}
+
+#newsletter button {
+    /* Bouton du formulaire de newsletter */
+    padding: 0.5rem 1rem;
+    /* Espacement interne */
+    background-color: #005f73;
+    /* Couleur de fond bleue foncée */
+    color: #fff;
+    /* Texte blanc pour contraste */
+    border: none;
+    /* Suppression de la bordure */
+    border-radius: 5px;
+    /* Coins arrondis */
+    cursor: pointer;
+    /* Changement de curseur au survol */
+}
+
+/* --- Style principal du conteneur du quiz --- */
+#quiz {
+    /* Espacement autour du quiz pour le séparer des autres éléments */
+    margin: 20px auto;
+    /* Espacement interne pour aérer le contenu du quiz */
+    padding: 20px;
+    /* Fond clair pour un design propre et lisible */
+    background: #f8f9fa;
+    /* Bordure fine et grise pour délimiter le conteneur */
+    border: 2px solid #ddd;
+    /* Coins arrondis pour un design plus doux et moderne */
+    border-radius: 8px;
+    /* Largeur maximale du conteneur pour éviter qu'il soit trop large */
+    max-width: 600px;
+    /* Ombre légère pour donner un effet de surélévation et de profondeur */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Style du titre du quiz --- */
+#quiz h2 {
+    /* Centrage du titre pour une présentation propre et équilibrée */
+    text-align: center;
+    /* Couleur bleue pour rendre le titre visible et attrayant */
+    color: #0056b3;
+    /* Espacement sous le titre pour le séparer du reste du contenu */
+    margin-bottom: 20px;
+}
+
+/* --- Style des questions du quiz --- */
+.quiz-question {
+    /* Espacement vertical entre chaque question */
+    margin: 15px 0;
+    /* Taille de police légèrement augmentée pour une meilleure lisibilité */
+    font-size: 1.1rem;
+}
+
+/* --- Style des étiquettes des options de réponse --- */
+.quiz-question label {
+    /* Affichage en bloc pour que les étiquettes prennent toute la largeur disponible */
+    display: block;
+    /* Espacement vertical entre l'étiquette et l'élément suivant */
+    margin: 5px 0;
+}
+
+/* --- Style du bouton d'envoi du quiz --- */
+button {
+    /* Affichage en bloc et centrage automatique pour une disposition centrée */
+    display: block;
+    margin: 20px auto;
+    /* Espacement interne pour rendre le bouton plus grand et facile à cliquer */
+    padding: 10px 20px;
+    /* Fond bleu pour le bouton afin qu'il se distingue bien */
+    background-color: #0056b3;
+    /* Texte en blanc pour un bon contraste avec le fond bleu */
+    color: white;
+    /* Suppression de la bordure pour un design épuré */
+    border: none;
+    /* Coins arrondis pour un aspect plus moderne et doux */
+    border-radius: 5px;
+    /* Curseur en forme de main pour signaler que le bouton est cliquable */
+    cursor: pointer;
+    /* Taille de police confortable pour le bouton */
+    font-size: 1rem;
+    /* Effet de transition pour l'animation au survol */
+    transition: background 0.3s ease;
+}
+
+/* --- Style du bouton au survol --- */
+button:hover {
+    /* Changement de couleur de fond pour indiquer une interaction */
+    background-color: #ffcc00;
+    /* Changement de couleur du texte pour un meilleur contraste au survol */
+    color: #0056b3;
+}
+
+/* --- Style du résultat du quiz --- */
+#quiz-result {
+    /* Centrage du texte pour afficher le résultat de manière lisible */
+    text-align: center;
+    /* Taille de police légèrement agrandie pour le résultat */
+    font-size: 1.2rem;
+    /* Espacement au-dessus du résultat pour le séparer du contenu précédent */
+    margin-top: 15px;
+    /* Mise en gras du texte pour accentuer le résultat */
+    font-weight: bold;
+    /* Couleur verte pour signaler un résultat positif ou de succès */
+    color: #28a745;
+}
+
+
+@media (max-width: 768px) {
+
+    /* =================================================================
+    Ajuste la taille du titre principal dans l'en-tête sur mobile
+    ================================================================== */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* =================================================================
+    Modification du menu de navigation : passe les éléments en colonne
+    pour s'adapter aux petits écrans
+    ================================================================== */
+    header nav ul {
+        flex-direction: column;
+        /* Les liens passent en colonne */
+        align-items: center;
+        width: 100%;
+        /* Assure que les liens prennent toute la largeur */
+    }
+
+    /* =================================================================
+    Ajuste la disposition des bannières (top et bottom) en colonne
+    ================================================================== */
+    .bandeau {
+        flex-direction: column;
+        /* Les logos passent en colonne */
+        gap: 10px;
+        /* Espacement réduit entre les logos */
+        width: 100%;
+        /* Prend toute la largeur */
+    }
+
+    /* =================================================================
+    Modifie la taille des images dans les bannières pour s'ajuster à la taille mobile
+    ================================================================== */
+    .bandeau img,
+    img {
+        width: 80%;
+        /* Les images prennent 80% de la largeur de l'écran */
+        height: auto;
+        /* Maintient la proportion de l'image */
+    }
+
+    /* =================================================================
+    Modifie l'apparence du corps de la page pour occuper toute la largeur de l'écran
+    ================================================================== */
+    body {
+        background-color: white;
+        /* Supprime le fond gris */
+        width: 100%;
+        /* Utilise toute la largeur disponible */
+    }
+
+    /* =================================================================
+    Mise en page de la section principale : réduction des marges et padding
+    pour occuper tout l'écran sur mobile
+    ================================================================== */
+    main {
+        background-color: white;
+        padding: 15px;
+        width: 100%;
+        /* Prend toute la largeur de l'écran */
+        box-shadow: none;
+        /* Supprime l'ombre (cadre) */
+        border-radius: 0;
+        /* Supprime les coins arrondis */
+        margin: 0;
+        /* Supprime les marges */
+    }
+
+    table {
+        width: 100%;
+        /* Adapte la largeur du tableau à celle de l'écran */
+        font-size: 0.9em;
+        /* Réduit légèrement la taille de la police */
+    }
+
+    table img {
+
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        /* Centrer l'image */
+
+    }
+
+    td,
+    th {
+        display: block;
+        /* Rendre les cellules empilées pour les petits écrans */
+        text-align: center;
+    }
+
+    .tableau {
+        width: 100%;
+        overflow-x: auto;
+        /* Ajoute un défilement horizontal si nécessaire */
+    }
+
+    /* Conteneur de vidéo responsive */
+    .video-section {
+        position: relative;
+        width: 100%;
+        /* Prend toute la largeur disponible */
+        padding-bottom: 56.25%;
+        /* Ratio 16:9 (hauteur = largeur * 9/16) */
+        height: 0;
+        /* Nécessaire pour le positionnement absolu */
+        overflow: hidden;
+        /* Cache tout débordement */
+        margin: 0 auto;
+        /* Centrer le conteneur */
+        border-radius: 8px;
+        /* Arrondi des coins */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Ombre pour un effet esthétique */
+    }
+
+    /* Style pour la vidéo */
+    .video-section iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* S'étire à la largeur du conteneur */
+        height: 100%;
+        /* S'étire à la hauteur calculée */
+        border: 0;
+        /* Supprime la bordure */
+    }
+
+    /* =================================================================
+    Section "Sanctions" : ajuste les espacements et la taille de police
+    pour une meilleure lisibilité sur mobile
+    ================================================================== */
+    section {
+        margin: 20px 0;
+        /* Espacement adapté pour mobile */
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+        /* Réduit la taille du titre pour l'adapter à l'écran */
+    }
+
+    section p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        /* Réduit l'espacement sous le paragraphe */
+    }
+
+    section ul {
+        list-style-type: disc;
+        /* Liste avec puces classiques */
+        padding-left: 20px;
+        /* Indentation pour les puces */
+    }
+
+    section li {
+        font-size: 1rem;
+        /* Taille de la police des éléments de la liste */
+        margin-bottom: 10px;
+        /* Espacement entre les éléments */
+    }
+
+    /* =================================================================
+    Icônes sociales : réduit leur taille et ajuste l'espacement
+    ================================================================== */
+    .social-icons {
+        gap: 10px;
+        /* Réduit l'espacement entre les icônes */
+    }
+
+    .social-icons img {
+        width: 35px;
+        height: 35px;
+        /* Réduit la taille des icônes à 35px */
+    }
+
+    /* =================================================================
+    Animations : effets de survol plus adaptés pour mobile
+    ================================================================== */
+    header nav ul li a:hover {
+        transform: translateY(-3px);
+        /* Déplace légèrement l'élément au survol */
+        transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    .social-icons img:hover {
+        transform: rotate(10deg) scale(1.2);
+        /* Ajoute une rotation et un zoom au survol */
+        transition: transform 0.3s ease;
+    }
+}
+
+/* --- Effet de survol des liens de navigation --- */
+header nav ul li a:hover {
+    /* Déplacement vertical léger du lien pour l'effet de survol */
+    transform: translateY(-3px);
+    /* Transition fluide pour l'animation de déplacement et de changement de couleur de fond */
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* --- Effet de survol pour les icônes sociales --- */
+.social-icons img:hover {
+    /* Rotation de l'image de 10° et agrandissement pour un effet interactif plus visible */
+    transform: rotate(10deg) scale(1.2);
+    /* Transition fluide pour l'animation de transformation */
+    transition: transform 0.3s ease;
+}
+
+/* --- Fond dynamique de la page avec animation --- */
+body {
+    /* Définition de l'image de fond initiale avec un chemin relatif */
+    background-image: url('../Images/ffhb.jfif');
+    /* L'image de fond doit couvrir toute la surface de la fenêtre du navigateur */
+    background-size: cover;
+    /* L'image de fond reste fixe même lors du défilement de la page */
+    background-attachment: fixed;
+    /* Application d'une animation de changement de fond toutes les 15 secondes */
+    animation: changeBackground 15s infinite;
+}
+
+/* --- Définition de l'animation pour changer l'image de fond --- */
+@keyframes changeBackground {
+    0% {
+        /* L'image de fond commence avec 'ffhb.jfif' */
+        background-image: url('../Images/ffhb.jfif');
+    }
+
+    33% {
+        /* Après 5 secondes, l'image de fond change pour 'ehf.png' */
+        background-image: url('../Images/ehf.png');
+    }
+
+    66% {
+        /* Après 10 secondes, l'image de fond change à 'ihf.png' */
+        background-image: url('../Images/ihf.png');
+    }
+
+    100% {
+        /* Retour à l'image initiale 'ffhb.jfif' à la fin de l'animation */
+        background-image: url('../Images/ffhb.jfif');
+    }
+}
+
+/* --- Grille CSS pour les pages spécifiques --- */
+.grid-container {
+    /* Utilisation de la grille CSS pour disposer les éléments de manière flexible */
+    display: grid;
+    /* Définition des colonnes de la grille pour qu'elles s'adaptent en fonction de l'espace disponible */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Définition d'un espace de 20px entre chaque élément de la grille */
+    gap: 20px;
+    /* Espacement vertical et horizontal autour de la grille */
+    margin: 20px 0;
+}
+
+/* --- Style des éléments de la grille --- */
+.grid-item {
+    /* Espacement interne de 15px autour du contenu des éléments */
+    padding: 15px;
+    /* Fond blanc pour chaque élément pour le rendre bien visible */
+    background-color: #fff;
+    /* Bordure fine et gris clair autour des éléments */
+    border: 1px solid #ddd;
+    /* Coins arrondis pour un effet plus doux */
+    border-radius: 8px;
+    /* Ombre légère autour des éléments pour leur donner un effet de surélévation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Flexbox pour les équipes ou sections --- */
+.flex-container {
+    /* Utilisation de Flexbox pour organiser les éléments en lignes ou colonnes */
+    display: flex;
+    /* Permet aux éléments de s'enrouler (wrap) si l'espace est insuffisant */
+    flex-wrap: wrap;
+    /* Espace de 20px entre chaque élément dans la flexbox */
+    gap: 20px;
+    /* Centrage des éléments horizontalement */
+    justify-content: center;
+}
+
+/* --- Style des éléments Flexbox --- */
+.flex-item {
+    /* Définition d'une base de taille flexible de 300px, qui peut s'ajuster en fonction de l'espace disponible */
+    flex: 1 1 300px;
+    /* Espacement interne de 15px autour du contenu des éléments */
+    padding: 15px;
+    /* Fond blanc pour chaque élément pour un design propre */
+    background-color: #fff;
+    /* Bordure fine et gris clair autour des éléments */
+    border: 1px solid #ddd;
+    /* Coins arrondis pour un effet visuel plus agréable */
+    border-radius: 8px;
+    /* Ombre légère autour des éléments pour leur donner de la profondeur */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Animation de "pulse" pour un effet d'agrandissement/rétrécissement */
+    animation: pulse 2s infinite;
+}
+
+/* --- Définition de l'animation "pulse" --- */
+@keyframes pulse {
+    0% {
+        /* L'élément commence à sa taille normale */
+        transform: scale(1);
+    }
+
+    50% {
+        /* À 50%, l'élément devient légèrement plus grand */
+        transform: scale(1.02);
+    }
+
+    100% {
+        /* À la fin de l'animation, il revient à sa taille originale */
+        transform: scale(1);
+    }
+}
+
+/* --- Transitions entre pages --- */
+body {
+    /* Initialisation de l'opacité à 0 pour que la page commence invisible */
+    opacity: 0;
+    /* Application d'une animation fade-in pour rendre la page progressivement visible */
+    animation: fadeInBody 1.5s forwards;
+}
+
+/* --- Définition de l'animation de fade-in pour le body --- */
+@keyframes fadeInBody {
+    from {
+        /* Le début de l'animation commence avec une opacité de 0 (invisible) */
+        opacity: 0;
+    }
+
+    to {
+        /* À la fin de l'animation, l'opacité atteint 1 (complètement visible) */
+        opacity: 1;
+    }
+}
+
+/* --- Accessibilité (focus visible) --- */
+a:focus {
+    /* Lorsque l'élément est sélectionné avec le clavier (focus), on lui applique un contour */
+    outline: 2px dashed #0056b3;
+    /* Décalage du contour de 4px pour le rendre plus visible et améliorer l'accessibilité */
+    outline-offset: 4px;
+}
+
+/* --- Animations CSS --- */
+h1 {
+    /* Application de l'animation fade-in pour le titre h1 */
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* --- Définition de l'animation de fade-in pour h1 --- */
+@keyframes fadeIn {
+    from {
+        /* Le titre commence avec une opacité de 0, invisible */
+        opacity: 0;
+    }
+
+    to {
+        /* Le titre devient progressivement visible avec une opacité de 1 */
+        opacity: 1;
+    }
+}
+
+/* --- Animation de rebond pour les icônes sociales --- */
+.social-icons img {
+    /* L'animation de rebond est appliquée aux images des icônes sociales */
+    animation: bounce 2s infinite;
+}
+
+/* --- Définition de l'animation de rebond pour les icônes sociales --- */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        /* Au début, à 20%, 50%, 80%, et 100%, l'élément reste à sa position initiale */
+        transform: translateY(0);
+    }
+
+    40% {
+        /* À 40%, l'élément se déplace vers le haut de 10px pour l'effet de rebond */
+        transform: translateY(-10px);
+    }
+
+    60% {
+        /* À 60%, l'élément rebondit un peu moins haut, à 5px */
+        transform: translateY(-5px);
+    }
+}
+
+/* --- Conteneur de défilement horizontal --- */
+.defillement {
+    /* Utilisation de Flexbox pour aligner les éléments horizontalement */
+    display: flex;
+    /* Définition de l'overflow à auto pour permettre un défilement horizontal si nécessaire */
+    overflow: auto;
+    /* Espacement de 20px entre chaque élément dans le conteneur */
+    gap: 20px;
+}
+
+/* --- Style des pages dans le conteneur de défilement --- */
+.pages {
+    /* Chaque page a une largeur minimale de 300px */
+    min-width: 300px;
+    /* Les éléments de la flexbox ne se redimensionnent pas et restent à leur taille définie */
+    flex: 0 0 auto;
+}
+
+/* --- Style du pied de page --- */
+footer {
+    /* Fond vert-bleu pour le pied de page */
+    background-color: #0a9396;
+    /* Texte en blanc pour le contraste et la lisibilité */
+    color: white;
+    /* Centrage du texte dans le pied de page */
+    text-align: center;
+    /* Espacement vertical pour le contenu du pied de page */
+    padding: 20px 0;
+    /* Espacement entre le contenu principal et le pied de page */
+    margin-top: 30px;
+}
+
+/* --- Conteneur principal du quiz --- */
+.quiz-container {
+    /* Largeur maximale de 600px, garantissant que le quiz ne soit pas trop large même sur des écrans grands */
+    max-width: 600px;
+    /* Centrage du conteneur sur la page avec une marge automatique à gauche et à droite */
+    margin: 0 auto;
+    /* Fond blanc pour le quiz, afin de le rendre propre et distinct de l'arrière-plan */
+    background: white;
+    /* Espacement interne de 20px pour ajouter de l'air autour du contenu */
+    padding: 20px;
+    /* Coins arrondis pour donner un aspect moderne et agréable */
+    border-radius: 8px;
+    /* Ombre légère autour du conteneur pour lui donner un effet de surélévation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Style des questions du quiz --- */
+.question {
+    /* Marge en bas de chaque question pour espacer les éléments suivants */
+    margin-bottom: 15px;
+}
+
+/* --- Style du conteneur des réponses --- */
+.answers {
+    /* Marge verticale de 10px en haut et en bas pour espacer les groupes de réponses */
+    margin: 10px 0;
+}
+
+/* --- Style des réponses individuelles --- */
+.answer {
+    /* Marge à gauche pour décaler les options de réponse, créant un retrait visuel */
+    margin-left: 20px;
+}
+
+/* --- Style des boutons de réponse --- */
+button {
+    /* Espacement interne de 10px verticalement et 20px horizontalement pour rendre le bouton plus grand et facile à cliquer */
+    padding: 10px 20px;
+    /* Couleur de fond verte pour le bouton, attirant l'attention sur l'action */
+    background-color: #4CAF50;
+    /* Couleur du texte en blanc pour un bon contraste avec le fond */
+    color: white;
+    /* Suppression de la bordure par défaut du bouton */
+    border: none;
+    /* Coins arrondis pour un bouton au design plus doux */
+    border-radius: 4px;
+    /* Curseur en forme de main pour indiquer que c'est un élément cliquable */
+    cursor: pointer;
+}
+
+/* --- Effet au survol du bouton --- */
+button:hover {
+    /* Lorsque le bouton est survolé, la couleur de fond devient légèrement plus foncée */
+    background-color: #45a049;
+}
+
+/* --- Style du résultat du quiz --- */
+.result {
+    /* Marge en haut pour espacer le résultat des éléments précédents */
+    margin-top: 20px;
+    /* Centrage du texte pour le résultat */
+    text-align: center;
+    /* Mise en gras du texte pour le rendre plus visible */
+    font-weight: bold;
+}
+
+/* --- Félicitations en cas de succès --- */
+.congratulation {
+    /* Texte en vert pour signifier la réussite */
+    color: green;
+    /* Taille de police agrandie pour accentuer le message de félicitations */
+    font-size: 1.5em;
+    /* Animation de type "celebration" pour rendre l'affichage du texte plus dynamique */
+    animation: celebration 2s ease-in-out;
+}
+
+/* --- Motivation en cas d'échec --- */
+.motivation {
+    /* Texte en rouge pour signifier qu'il faut se motiver à essayer à nouveau */
+    color: red;
+    /* Taille de police agrandie pour attirer l'attention sur le message */
+    font-size: 1.5em;
+    /* Animation "shake" pour faire vibrer le texte, suggérant un besoin d'effort supplémentaire */
+    animation: shake 0.5s infinite;
+}
+
+/* --- Animation de célébration pour les félicitations --- */
+@keyframes celebration {
+    0% {
+        /* L'élément commence à sa taille normale */
+        transform: scale(1);
+    }
+
+    50% {
+        /* À 50%, l'élément devient 1.2 fois plus grand */
+        transform: scale(1.2);
+    }
+
+    100% {
+        /* À la fin de l'animation, il revient à sa taille initiale */
+        transform: scale(1);
+    }
+}
+
+/* --- Animation de secousse pour la motivation --- */
+@keyframes shake {
+    0% {
+        /* Position initiale de l'élément */
+        transform: translateX(0);
+    }
+
+    25% {
+        /* À 25%, l'élément se déplace de -10px vers la gauche */
+        transform: translateX(-10px);
+    }
+
+    50% {
+        /* À 50%, l'élément se déplace de 10px vers la droite */
+        transform: translateX(10px);
+    }
+
+    75% {
+        /* À 75%, l'élément se déplace de nouveau de -10px vers la gauche */
+        transform: translateX(-10px);
+    }
+
+    100% {
+        /* À 100%, l'élément revient à sa position initiale */
+        transform: translateX(0);
+    }
+}
+
+#penalty {
+    position: relative;
+    text-align: center;
+}
+
+#score {
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.question {
+    margin: 20px 0;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers li {
+    margin: 10px 0;
+}
+
+.answers input {
+    margin-right: 10px;
+}
+
+.submit {
+    display: block;
+    width: 100%;
+    background-color: #00509e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color: #003f7d;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.result.good {
+    color: green;
+    animation: pulse 1s infinite;
+}
+
+.result.average {
+    color: orange;
+    animation: shake 0.5s;
+}
+
+.result.bad {
+    color: red;
+    animation: bounce 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
