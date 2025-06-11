@@ -96,7 +96,7 @@ Si vous avez des idées pour de nouvelles sections ou des suggestions pour amél
 
 Pour toute question ou assistance, veuillez contacter :  
 - **Nom :** Florian Scher  
-- **Email :** florian.scher.pro@mail.com  
+- **Email :** florian.scher.pro@gmail.com  
 - **GitHub :** [Handball Air Force Repository](https://github.com/FlorianScher/Handball_Air_Force)  
 
 ---
